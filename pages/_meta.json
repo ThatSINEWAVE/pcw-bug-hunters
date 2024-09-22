@@ -1,13 +1,13 @@
 {
   "index": "Introduction",
-  "datamining": "Datamining",
   "agents": "Agents",
+  "artwork-wallpapers": "Artwork & Wallpapers",
+  "bugs-and-oobs": "Bugs & OOBs",
+  "datamining": "Datamining",
+  "docs-sheets-and-more": "Docs, Sheets & More",
+  "gameplay-mechanics": "Gameplay Mechanics",
   "maps": "Maps",
   "weaponry": "Weaponry",
-  "bugs-and-oobs": "Bugs & OOBs",
-  "artwork-wallpapers": "Artwork & Wallpapers",
-  "gameplay-mechanics": "Gameplay Mechanics",
-  "docs-sheets-and-more": "Docs, Sheets & More",
   "about": {
     "title": "About",
     "type": "page"
