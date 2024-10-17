@@ -17,5 +17,11 @@
     "type": "page",
     "href": "https://twitter.com/",
     "newWindow": true
+  },
+  "Support": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/",
+    "newWindow": true
   }
 }
