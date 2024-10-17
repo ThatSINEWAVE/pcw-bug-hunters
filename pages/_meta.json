@@ -13,13 +13,13 @@
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact",
     "type": "page",
     "href": "https://twitter.com/",
     "newWindow": true
   },
-  "Support": {
-    "title": "Contact ↗",
+  "support": {
+    "title": "support",
     "type": "page",
     "href": "https://twitter.com/",
     "newWindow": true
