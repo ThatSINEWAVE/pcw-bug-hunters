@@ -8,10 +8,6 @@
   "gameplay-mechanics": "Gameplay Mechanics",
   "maps": "Maps",
   "weaponry": "Weaponry",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
     "title": "Contact",
     "type": "page",
