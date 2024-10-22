@@ -1,6 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { useConfig } from 'nextra-theme-docs';
+import Head from 'next/head';
 import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
@@ -16,14 +17,21 @@ const config: DocsThemeConfig = {
     text: 'Made by SINEWAVE',
   },
 
-  // Add the head function here for custom meta tags
-  head: (
-    <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="PCW Bug Hunters" />
-      <meta property="og:description" content="Work in Progress" />
-    </>
-  )
-}
+  head() {
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter } = useConfig();
+
+    // Constructing the dynamic URL for Open Graph tags
+    const url = `https://pcw-bughunters.vercel.app/${defaultLocale === locale ? asPath : `/${locale}${asPath}`}`;
+
+    return (
+      <Head>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={frontMatter.title || 'PCW Bug Hunters'} />
+        <meta property="og:description" content={frontMatter.description || 'Work in Progress'} />
+      </Head>
+    );
+  },
+};
 
 export default config;
