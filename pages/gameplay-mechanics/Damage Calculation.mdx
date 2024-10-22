@@ -1,4 +1,3 @@
-
 # Damage Calculation
 
 In Project CW, damage depends on several key mechanics and because of this, we’ll break it down in two main sections: **Critical Damage Calculation** and **Critical Damage Registration**.
@@ -13,7 +12,7 @@ During the Open Alpha of February 2024, when a shell hits an internal module, th
 
 These Universal Modifiers are then multiplied by a tank's unique Crit Modifier. This explains how a tank with lower base damage can still have higher critical damage than one with higher base damage.
 
-> #### Note
+> **Note**
 > Universal modifiers apply to all tanks, but total crit damage can be reduced by certain damage reduction modifiers, such as those used by defender tanks. It is not yet clear how these modifiers are factored in, but they could either lower the universal modifier or affect the overall damage calculation. This suggests that such modifiers could be among the best defensive tools for tanks. Conversely, some tanks, like the Udarnik with its final module upgrade, may take increased damage to their ammo racks.
 
 ---
@@ -31,5 +30,5 @@ Penetration plays a key role in the damage cone, and it’s arguably more import
 
 In practice, this means that tanks with high penetration, especially when firing HEAT ATGMs, have a higher likelihood of causing critical hits compared to tanks firing low-penetration APCR rounds, like Blitz.
 
-> #### Note
+> **Note**
 > It's still unclear whether shell caliber also influences the size or behavior of the damage cone.
