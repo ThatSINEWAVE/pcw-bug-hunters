@@ -1,5 +1,7 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from 'react';
+import { useRouter } from 'next/router';
+import { useConfig } from 'nextra-theme-docs';
+import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: <span>PCW Bug Hunters</span>,
@@ -13,25 +15,22 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Made by SINEWAVE',
   },
-}
 
-export default {
+  // Add the head function here for custom meta tags
   head() {
-    const { asPath, defaultLocale, locale } = useRouter()
-    const { frontMatter } = useConfig()
-    const url =
-      'https://pcw-bughunters.vercel.app' +
-      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter } = useConfig();
+
+    const url = `https://pcw-bughunters.vercel.app${defaultLocale === locale ? asPath : `/${locale}${asPath}`}`;
 
     return (
       <>
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontMatter.title || 'PCW Bug Hunters'} />
-        <meta
-          property="og:description"
-          content={frontMatter.description || 'Work in Progress'}
-        />
+        <meta property="og:description" content={frontMatter.description || 'Work in Progress'} />
       </>
-    )
-  }
-}
+    );
+  },
+};
+
+export default config;
