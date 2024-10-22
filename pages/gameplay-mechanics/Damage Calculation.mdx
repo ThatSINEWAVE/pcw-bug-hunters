@@ -1,38 +1,30 @@
+### Critical Damage Calculation
 
-# Crit Damage Calculation  
+During the Open Alpha of February 2024, when a shell hits an internal module, the module’s health is reduced by the base shell damage value, which can vary by +/- 15% (Base Damage). This means that module damage does not affect a tank's overall HP directly. The following explanation aims to clear up some confusion regarding how the critical damage modifier is calculated.
 
-During the Open Alpha of February 2024 when a shell hits an internal module its health value reduces by the value of the base shell damage attribute which can be +/- 15% (Base Damage). This means module damage doesn't effect damage to HP in any sort of way and this illustration clarifies a lot of confusion on how crit modifier is calculated.   
+#### Universal Modifier Values
+- Fuel Tanks and Engines have a modifier of **1.0**
+- Ammo has a modifier of **1.5**
 
-## Universal Modifiers Values
-Fuel Tanks and Engines have a modifiers of 1.0   
-Ammo has a 1.5modifier.   
-
-These Modifiers (Universal Mod) are then multiplied by a tanks own Crit Modifier and this is how lower base damage tanks can have higher crit damage than another tank with less base damage.   
-
-> #### Note
-> All universal modifiers are the same for all tanks however, the total
-> crit damage can be reduced by damage reduction modifiers like
-> defenders have. We still don't know how this damage reduction comes
-> into the equation but it can either reduce the universal modifier or
-> the entire damage calculation. This means it could be one of the best
-> survivability tools to have as an agent. There is also the opposite of
-> this where tanks like udarnik with its final module upgrade could take
-> increased ammo rack damage.
-
----  
-# Crit Damage Registering  
-Crits for different ammo, guns and penetration are different. HEAT and APCR have different chances of critting a module and with this I mean CW has a similar system to War Thunder where a shell will first enter the tank upon penetration and the shell will hit a varied space in a cone shape.
-
-## Ammo Types
-### HEAT
-Has a much larger cone than APCR which means you have a larger area where you can hit internal modules compared to them. This in turns means when specifically aiming for crit spots you don't have to be as accurate. HEAT also generally has higher crit damage compared to APCR.  
-
-### APCR
-This ammo has less of a cone when penetrating a tank so this means you have to be more precise with your shots.
-
-Another factor that effects the cone of internal damage hitting a tank is penetration, arguably more important. This doesn't just effect if you penetrate and deal damage to a tank but how far this cone travels through an internal hit-box of a tank. This in turn means tanks with higher pen such as ray can penetrate tanks frontally and deal damage to modules quite far into tanks compared to a tank firing the same ammunition with lower penetration.
-
-In turn this means tanks with high pen firing something like HEAT ATGMs can crit more often compared to something like blitz for example firing low pen APCR rounds.  
+These Universal Modifiers are then multiplied by a tank's unique Crit Modifier. This explains how a tank with lower base damage can still have higher critical damage than one with higher base damage.
 
 > #### Note
-> Its unknown whether or not caliber also effects this.
+> Universal modifiers apply to all tanks, but total crit damage can be reduced by certain damage reduction modifiers, such as those used by defender tanks. It is not yet clear how these modifiers are factored in, but they could either lower the universal modifier or affect the overall damage calculation. This suggests that such modifiers could be among the best defensive tools for tanks. Conversely, some tanks, like the Udarnik with its final module upgrade, may take increased damage to their ammo racks.
+
+---
+
+### Critical Damage Registration
+
+The chance to score a critical hit depends on the type of ammo, gun, and penetration. High-Explosive Anti-Tank (HEAT) and Armor-Piercing Composite Rigid (APCR) rounds have different probabilities of causing crits, similar to the mechanics in War Thunder. When a shell penetrates a tank, it enters the vehicle and interacts with internal components within a cone-shaped area.
+
+#### Ammo Types
+- **HEAT**: This type of ammo has a wider damage cone compared to APCR, giving it a larger area where internal modules can be hit. As a result, when aiming for critical spots, HEAT users don't need to be as precise. HEAT also tends to cause higher critical damage than APCR.
+
+- **APCR**: APCR rounds have a narrower damage cone, which requires more precise targeting of internal modules to cause critical damage.
+
+Penetration plays a key role in the damage cone, and it’s arguably more important than the ammo type. Penetration affects not only whether a shell can pierce the tank’s armor but also how deep the damage cone extends within the tank’s internal structure. Tanks with higher penetration, like Ray, can cause damage to internal modules from the front more effectively than tanks with lower penetration firing the same ammunition.
+
+In practice, this means that tanks with high penetration, especially when firing HEAT ATGMs, have a higher likelihood of causing critical hits compared to tanks firing low-penetration APCR rounds, like Blitz.
+
+> #### Note
+> It's still unclear whether shell caliber also influences the size or behavior of the damage cone.
