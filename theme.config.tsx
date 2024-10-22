@@ -15,12 +15,12 @@ const config: DocsThemeConfig = {
   },
 }
 
-export default config
+export default {
   head() {
     const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
     const url =
-      'https://my-app.com' +
+      'https://pcw-bughunters.vercel.app' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
 
     return (
