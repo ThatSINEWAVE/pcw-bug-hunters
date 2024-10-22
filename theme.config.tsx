@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.gg/2nHHHBWNDw',
   },
-  docsRepositoryBase: 'https://github.com/ThatSINEWAVE/pcw-bug-hunters',
+  docsRepositoryBase: 'https://github.com/ThatSINEWAVE/pcw-bug-hunters/tree/main',
   footer: {
     text: 'Made by SINEWAVE',
   },
