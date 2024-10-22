@@ -1,8 +1,13 @@
-### Critical Damage Calculation
+
+# Damage Calculation
+
+In Project CW, damage depends on several key mechanics and because of this, we’ll break it down in two main sections: **Critical Damage Calculation** and **Critical Damage Registration**.
+
+## Critical Damage Calculation
 
 During the Open Alpha of February 2024, when a shell hits an internal module, the module’s health is reduced by the base shell damage value, which can vary by +/- 15% (Base Damage). This means that module damage does not affect a tank's overall HP directly. The following explanation aims to clear up some confusion regarding how the critical damage modifier is calculated.
 
-#### Universal Modifier Values
+### Universal Modifier Values
 - Fuel Tanks and Engines have a modifier of **1.0**
 - Ammo has a modifier of **1.5**
 
@@ -13,11 +18,11 @@ These Universal Modifiers are then multiplied by a tank's unique Crit Modifier. 
 
 ---
 
-### Critical Damage Registration
+## Critical Damage Registration
 
 The chance to score a critical hit depends on the type of ammo, gun, and penetration. High-Explosive Anti-Tank (HEAT) and Armor-Piercing Composite Rigid (APCR) rounds have different probabilities of causing crits, similar to the mechanics in War Thunder. When a shell penetrates a tank, it enters the vehicle and interacts with internal components within a cone-shaped area.
 
-#### Ammo Types
+### Ammo Types
 - **HEAT**: This type of ammo has a wider damage cone compared to APCR, giving it a larger area where internal modules can be hit. As a result, when aiming for critical spots, HEAT users don't need to be as precise. HEAT also tends to cause higher critical damage than APCR.
 
 - **APCR**: APCR rounds have a narrower damage cone, which requires more precise targeting of internal modules to cause critical damage.
