@@ -23,17 +23,17 @@ To illustrate how these calculations work in practice, consider the following sc
 
 <div align="center">
 
-![Critical Damage Registration](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Critical%20Damage%20Registration.png)
+![Critical Damage Registration](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Crit_Hit_Engine.png)
 
 </div>
 
-In this example, a shell with 400 base damage hits a tank’s engine module, which has a critical multiplier of 1.0. The shell damage is multiplied by the crit multiplier (1.5) and the universal modifier (1.0), resulting in 600 damage to the tank. The engine itself takes 50 damage, reducing its health from 200 to 150.
+In this example a shell with a 1.5 crit modifier (tank's modifier) hits an engine which has a universal modifiers of 1.0. If the shell has 400 base damage this means 600 damage would be dealt. (Excluding crit mod reduction modifier) The engine itself takes 50 damage, reducing its health from 200 to 150.
 
 #### Example Calculation for Ammo Rack Hits
 
 <div align="center">
 
-![Critical Damage Calculation](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Critical%20Damage%20Calculation.png)
+![Critical Damage Calculation](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Crit_Hit_Ammo.png)
 
 </div>
 
