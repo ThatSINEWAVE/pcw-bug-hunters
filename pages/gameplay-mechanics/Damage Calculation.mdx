@@ -23,7 +23,7 @@ To illustrate how these calculations work in practice, consider the following sc
 
 <div align="center">
 
-![Critical Damage Registration](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Crit_Hit_Engine.png)
+![Crit_Hit_Engine](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Damage%20Calculations/Crit_Hit_Engine.png)
 
 </div>
 
@@ -33,7 +33,7 @@ In this example a shell with a 1.5 crit modifier (tank's modifier) hits an engin
 
 <div align="center">
 
-![Critical Damage Calculation](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Crit_Hit_Ammo.png)
+![Crit_Hit_Ammo](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Damage%20Calculations/Crit_Hit_Ammo.png)
 
 </div>
 
@@ -54,6 +54,12 @@ The chance to score a critical hit depends on the type of ammo, gun, and penetra
 - **APCR**: APCR rounds have a narrower damage cone, which requires more precise targeting of internal modules to cause critical damage.
 
 Penetration plays a key role in the damage cone, and it’s arguably more important than the ammo type. Penetration affects not only whether a shell can pierce the tank’s armor but also how deep the damage cone extends within the tank’s internal structure. Tanks with higher penetration, like Ray, can cause damage to internal modules from the front more effectively than tanks with lower penetration firing the same ammunition.
+
+<div align="center">
+
+![Crit_Registering_Image](https://raw.githubusercontent.com/ThatSINEWAVE/pcw-bug-hunters/refs/heads/main/images/gameplay-mechanics/Damage%20Calculations/Crit_Registering_Image.png)
+
+</div>
 
 In practice, this means that tanks with high penetration, especially when firing HEAT ATGMs, have a higher likelihood of causing critical hits compared to tanks firing low-penetration APCR rounds, like Blitz.
 
